@@ -13,7 +13,7 @@ module.exports = function (file, data) {
         data.basedir = path.resolve(process.cwd(), 'packages', relativeDir.split(path.sep)[0]);
         
         data.packageFilter = function (package) {
-            return { main: package['esnext:main'] };
+            return { main: package['jsnext:main'] };
         };
     }
 
